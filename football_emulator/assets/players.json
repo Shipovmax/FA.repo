@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Joseph Jackson",
     "position": "goalkeeper",
     "attack": 17,
@@ -9,6 +10,7 @@
     "overall": 54
   },
   {
+    "id": 2,
     "name": "Ryan Garcia",
     "position": "goalkeeper",
     "attack": 19,
@@ -18,6 +20,7 @@
     "overall": 57
   },
   {
+    "id": 3,
     "name": "Owen Wright",
     "position": "goalkeeper",
     "attack": 17,
@@ -27,6 +30,7 @@
     "overall": 56
   },
   {
+    "id": 4,
     "name": "Mason Young",
     "position": "goalkeeper",
     "attack": 15,
@@ -36,51 +40,7 @@
     "overall": 57
   },
   {
-    "name": "Henry Lee",
-    "position": "goalkeeper",
-    "attack": 18,
-    "defence": 92,
-    "physical": 80,
-    "technique": 74,
-    "overall": 56
-  },
-  {
-    "name": "Joseph Rodriguez",
-    "position": "right_back",
-    "attack": 55,
-    "defence": 85,
-    "physical": 83,
-    "technique": 73,
-    "overall": 70
-  },
-  {
-    "name": "Aiden Martin",
-    "position": "right_back",
-    "attack": 47,
-    "defence": 87,
-    "physical": 78,
-    "technique": 72,
-    "overall": 66
-  },
-  {
-    "name": "Samuel Johnson",
-    "position": "right_back",
-    "attack": 46,
-    "defence": 85,
-    "physical": 80,
-    "technique": 73,
-    "overall": 66
-  },
-  {
-    "name": "Henry Allen",
-    "position": "right_back",
-    "attack": 50,
-    "defence": 77,
-    "physical": 84,
-    "technique": 71,
-    "overall": 66
-  },
-  {
+    "id": 5,
     "name": "Logan Baker",
     "position": "right_back",
     "attack": 61,
@@ -90,6 +50,7 @@
     "overall": 72
   },
   {
+    "id": 6,
     "name": "Samuel Robinson",
     "position": "right_back",
     "attack": 56,
@@ -99,105 +60,7 @@
     "overall": 70
   },
   {
-    "name": "Andrew Rodriguez",
-    "position": "right_back",
-    "attack": 50,
-    "defence": 84,
-    "physical": 86,
-    "technique": 77,
-    "overall": 69
-  },
-  {
-    "name": "Benjamin Clark",
-    "position": "right_back",
-    "attack": 41,
-    "defence": 75,
-    "physical": 81,
-    "technique": 73,
-    "overall": 62
-  },
-  {
-    "name": "Daniel Smith",
-    "position": "center_back",
-    "attack": 43,
-    "defence": 88,
-    "physical": 81,
-    "technique": 80,
-    "overall": 67
-  },
-  {
-    "name": "John Hall",
-    "position": "center_back",
-    "attack": 47,
-    "defence": 85,
-    "physical": 81,
-    "technique": 78,
-    "overall": 68
-  },
-  {
-    "name": "Dylan Clark",
-    "position": "center_back",
-    "attack": 42,
-    "defence": 77,
-    "physical": 81,
-    "technique": 72,
-    "overall": 63
-  },
-  {
-    "name": "Elijah Brown",
-    "position": "center_back",
-    "attack": 52,
-    "defence": 85,
-    "physical": 78,
-    "technique": 78,
-    "overall": 69
-  },
-  {
-    "name": "Joshua Thompson",
-    "position": "center_back",
-    "attack": 51,
-    "defence": 75,
-    "physical": 86,
-    "technique": 79,
-    "overall": 68
-  },
-  {
-    "name": "Mason Carter",
-    "position": "center_back",
-    "attack": 53,
-    "defence": 80,
-    "physical": 81,
-    "technique": 80,
-    "overall": 69
-  },
-  {
-    "name": "Mason Young",
-    "position": "center_back",
-    "attack": 54,
-    "defence": 78,
-    "physical": 86,
-    "technique": 80,
-    "overall": 70
-  },
-  {
-    "name": "Mason Clark",
-    "position": "center_back",
-    "attack": 43,
-    "defence": 75,
-    "physical": 79,
-    "technique": 75,
-    "overall": 63
-  },
-  {
-    "name": "Dylan Scott",
-    "position": "center_back",
-    "attack": 51,
-    "defence": 86,
-    "physical": 80,
-    "technique": 72,
-    "overall": 68
-  },
-  {
+    "id": 7,
     "name": "Robert Martinez",
     "position": "center_back",
     "attack": 63,
@@ -207,69 +70,27 @@
     "overall": 73
   },
   {
-    "name": "Nathan Smith",
-    "position": "left_back",
-    "attack": 57,
-    "defence": 79,
+    "id": 8,
+    "name": "Elijah Brown",
+    "position": "center_back",
+    "attack": 52,
+    "defence": 85,
     "physical": 78,
+    "technique": 78,
+    "overall": 69
+  },
+  {
+    "id": 9,
+    "name": "Mason Young",
+    "position": "center_back",
+    "attack": 54,
+    "defence": 78,
+    "physical": 86,
     "technique": 80,
     "overall": 70
   },
   {
-    "name": "Jacob White",
-    "position": "left_back",
-    "attack": 55,
-    "defence": 80,
-    "physical": 84,
-    "technique": 70,
-    "overall": 69
-  },
-  {
-    "name": "Mason Smith",
-    "position": "left_back",
-    "attack": 61,
-    "defence": 77,
-    "physical": 78,
-    "technique": 73,
-    "overall": 70
-  },
-  {
-    "name": "Robert Garcia",
-    "position": "left_back",
-    "attack": 40,
-    "defence": 83,
-    "physical": 84,
-    "technique": 73,
-    "overall": 64
-  },
-  {
-    "name": "Anthony Hall",
-    "position": "left_back",
-    "attack": 63,
-    "defence": 77,
-    "physical": 78,
-    "technique": 74,
-    "overall": 71
-  },
-  {
-    "name": "Jacob Allen",
-    "position": "left_back",
-    "attack": 49,
-    "defence": 83,
-    "physical": 86,
-    "technique": 77,
-    "overall": 69
-  },
-  {
-    "name": "Owen Baker",
-    "position": "left_back",
-    "attack": 51,
-    "defence": 82,
-    "physical": 81,
-    "technique": 75,
-    "overall": 68
-  },
-  {
+    "id": 10,
     "name": "John Garcia",
     "position": "left_back",
     "attack": 65,
@@ -279,6 +100,17 @@
     "overall": 73
   },
   {
+    "id": 11,
+    "name": "Anthony Hall",
+    "position": "left_back",
+    "attack": 63,
+    "defence": 77,
+    "physical": 78,
+    "technique": 74,
+    "overall": 71
+  },
+  {
+    "id": 12,
     "name": "John Lee",
     "position": "defensive_midfielder",
     "attack": 74,
@@ -288,33 +120,7 @@
     "overall": 79
   },
   {
-    "name": "Henry Jackson",
-    "position": "defensive_midfielder",
-    "attack": 66,
-    "defence": 76,
-    "physical": 81,
-    "technique": 83,
-    "overall": 74
-  },
-  {
-    "name": "Anthony Adams",
-    "position": "defensive_midfielder",
-    "attack": 56,
-    "defence": 83,
-    "physical": 83,
-    "technique": 81,
-    "overall": 72
-  },
-  {
-    "name": "Noah Walker",
-    "position": "defensive_midfielder",
-    "attack": 58,
-    "defence": 72,
-    "physical": 85,
-    "technique": 84,
-    "overall": 71
-  },
-  {
+    "id": 13,
     "name": "Ryan Johnson",
     "position": "defensive_midfielder",
     "attack": 72,
@@ -324,6 +130,7 @@
     "overall": 79
   },
   {
+    "id": 14,
     "name": "Logan Harris",
     "position": "defensive_midfielder",
     "attack": 68,
@@ -333,123 +140,7 @@
     "overall": 77
   },
   {
-    "name": "Ethan Jackson",
-    "position": "defensive_midfielder",
-    "attack": 62,
-    "defence": 75,
-    "physical": 84,
-    "technique": 80,
-    "overall": 73
-  },
-  {
-    "name": "William Harris",
-    "position": "defensive_midfielder",
-    "attack": 59,
-    "defence": 72,
-    "physical": 84,
-    "technique": 80,
-    "overall": 71
-  },
-  {
-    "name": "Michael Green",
-    "position": "defensive_midfielder",
-    "attack": 65,
-    "defence": 84,
-    "physical": 82,
-    "technique": 76,
-    "overall": 74
-  },
-  {
-    "name": "Alexander Garcia",
-    "position": "defensive_midfielder",
-    "attack": 72,
-    "defence": 74,
-    "physical": 85,
-    "technique": 81,
-    "overall": 77
-  },
-  {
-    "name": "Nathan Martinez",
-    "position": "center_midfielder",
-    "attack": 61,
-    "defence": 76,
-    "physical": 78,
-    "technique": 75,
-    "overall": 70
-  },
-  {
-    "name": "Dylan Brown",
-    "position": "center_midfielder",
-    "attack": 58,
-    "defence": 72,
-    "physical": 85,
-    "technique": 77,
-    "overall": 70
-  },
-  {
-    "name": "Liam Wright",
-    "position": "center_midfielder",
-    "attack": 70,
-    "defence": 70,
-    "physical": 78,
-    "technique": 80,
-    "overall": 74
-  },
-  {
-    "name": "Logan Taylor",
-    "position": "center_midfielder",
-    "attack": 58,
-    "defence": 81,
-    "physical": 85,
-    "technique": 80,
-    "overall": 72
-  },
-  {
-    "name": "William Wright",
-    "position": "center_midfielder",
-    "attack": 62,
-    "defence": 78,
-    "physical": 80,
-    "technique": 80,
-    "overall": 72
-  },
-  {
-    "name": "Joshua Carter",
-    "position": "center_midfielder",
-    "attack": 58,
-    "defence": 79,
-    "physical": 81,
-    "technique": 76,
-    "overall": 70
-  },
-  {
-    "name": "Liam Adams",
-    "position": "center_midfielder",
-    "attack": 68,
-    "defence": 70,
-    "physical": 79,
-    "technique": 80,
-    "overall": 73
-  },
-  {
-    "name": "Benjamin Adams",
-    "position": "center_midfielder",
-    "attack": 61,
-    "defence": 79,
-    "physical": 85,
-    "technique": 77,
-    "overall": 73
-  },
-  {
-    "name": "Andrew Adams",
-    "position": "center_midfielder",
-    "attack": 67,
-    "defence": 74,
-    "physical": 79,
-    "technique": 80,
-    "overall": 73
-  },
-  {
+    "id": 15,
     "name": "Luke Lee",
     "position": "center_midfielder",
     "attack": 74,
@@ -459,15 +150,7 @@
     "overall": 79
   },
   {
-    "name": "Nathan Walker",
-    "position": "center_midfielder",
-    "attack": 60,
-    "defence": 84,
-    "physical": 83,
-    "technique": 75,
-    "overall": 72
-  },
-  {
+    "id": 16,
     "name": "Jacob Green",
     "position": "center_midfielder",
     "attack": 74,
@@ -477,15 +160,7 @@
     "overall": 77
   },
   {
-    "name": "Anthony Scott",
-    "position": "attacking_midfielder",
-    "attack": 81,
-    "defence": 62,
-    "physical": 81,
-    "technique": 81,
-    "overall": 77
-  },
-  {
+    "id": 17,
     "name": "Robert King",
     "position": "attacking_midfielder",
     "attack": 89,
@@ -495,6 +170,7 @@
     "overall": 81
   },
   {
+    "id": 18,
     "name": "Aiden Jackson",
     "position": "attacking_midfielder",
     "attack": 89,
@@ -504,42 +180,7 @@
     "overall": 80
   },
   {
-    "name": "Joseph Johnson",
-    "position": "attacking_midfielder",
-    "attack": 78,
-    "defence": 66,
-    "physical": 75,
-    "technique": 90,
-    "overall": 77
-  },
-  {
-    "name": "Robert Nelson",
-    "position": "attacking_midfielder",
-    "attack": 88,
-    "defence": 56,
-    "physical": 80,
-    "technique": 81,
-    "overall": 79
-  },
-  {
-    "name": "Michael Thomas",
-    "position": "attacking_midfielder",
-    "attack": 84,
-    "defence": 55,
-    "physical": 76,
-    "technique": 83,
-    "overall": 76
-  },
-  {
-    "name": "William Wright",
-    "position": "attacking_midfielder",
-    "attack": 79,
-    "defence": 62,
-    "physical": 80,
-    "technique": 86,
-    "overall": 77
-  },
-  {
+    "id": 19,
     "name": "Daniel Robinson",
     "position": "attacking_midfielder",
     "attack": 87,
@@ -549,24 +190,7 @@
     "overall": 80
   },
   {
-    "name": "Elijah Carter",
-    "position": "attacking_midfielder",
-    "attack": 84,
-    "defence": 57,
-    "physical": 85,
-    "technique": 87,
-    "overall": 79
-  },
-  {
-    "name": "Samuel Brown",
-    "position": "attacking_midfielder",
-    "attack": 78,
-    "defence": 63,
-    "physical": 82,
-    "technique": 89,
-    "overall": 78
-  },
-  {
+    "id": 20,
     "name": "Alexander Baker",
     "position": "right_midfielder",
     "attack": 84,
@@ -576,6 +200,7 @@
     "overall": 80
   },
   {
+    "id": 21,
     "name": "Benjamin Jackson",
     "position": "right_midfielder",
     "attack": 83,
@@ -585,60 +210,7 @@
     "overall": 79
   },
   {
-    "name": "Elijah Walker",
-    "position": "right_midfielder",
-    "attack": 84,
-    "defence": 41,
-    "physical": 88,
-    "technique": 82,
-    "overall": 76
-  },
-  {
-    "name": "Logan Harris",
-    "position": "right_midfielder",
-    "attack": 85,
-    "defence": 52,
-    "physical": 83,
-    "technique": 90,
-    "overall": 79
-  },
-  {
-    "name": "Joshua Scott",
-    "position": "right_midfielder",
-    "attack": 84,
-    "defence": 41,
-    "physical": 82,
-    "technique": 87,
-    "overall": 76
-  },
-  {
-    "name": "Ethan Nelson",
-    "position": "right_midfielder",
-    "attack": 93,
-    "defence": 48,
-    "physical": 78,
-    "technique": 82,
-    "overall": 79
-  },
-  {
-    "name": "Benjamin Green",
-    "position": "left_midfielder",
-    "attack": 89,
-    "defence": 45,
-    "physical": 78,
-    "technique": 88,
-    "overall": 78
-  },
-  {
-    "name": "Andrew Rodriguez",
-    "position": "left_midfielder",
-    "attack": 86,
-    "defence": 46,
-    "physical": 86,
-    "technique": 88,
-    "overall": 78
-  },
-  {
+    "id": 22,
     "name": "Dylan Anderson",
     "position": "left_midfielder",
     "attack": 94,
@@ -648,6 +220,7 @@
     "overall": 81
   },
   {
+    "id": 23,
     "name": "William Clark",
     "position": "left_midfielder",
     "attack": 89,
@@ -657,24 +230,7 @@
     "overall": 80
   },
   {
-    "name": "Andrew Clark",
-    "position": "left_midfielder",
-    "attack": 87,
-    "defence": 51,
-    "physical": 79,
-    "technique": 88,
-    "overall": 78
-  },
-  {
-    "name": "Andrew Robinson",
-    "position": "left_midfielder",
-    "attack": 84,
-    "defence": 51,
-    "physical": 82,
-    "technique": 85,
-    "overall": 77
-  },
-  {
+    "id": 24,
     "name": "John Baker",
     "position": "winger",
     "attack": 86,
@@ -684,69 +240,7 @@
     "overall": 81
   },
   {
-    "name": "Ryan White",
-    "position": "winger",
-    "attack": 80,
-    "defence": 55,
-    "physical": 75,
-    "technique": 89,
-    "overall": 76
-  },
-  {
-    "name": "David Clark",
-    "position": "winger",
-    "attack": 75,
-    "defence": 66,
-    "physical": 81,
-    "technique": 83,
-    "overall": 76
-  },
-  {
-    "name": "Matthew Scott",
-    "position": "winger",
-    "attack": 76,
-    "defence": 59,
-    "physical": 78,
-    "technique": 88,
-    "overall": 75
-  },
-  {
-    "name": "Owen Thomas",
-    "position": "winger",
-    "attack": 78,
-    "defence": 66,
-    "physical": 75,
-    "technique": 82,
-    "overall": 76
-  },
-  {
-    "name": "Christopher Thomas",
-    "position": "winger",
-    "attack": 81,
-    "defence": 63,
-    "physical": 77,
-    "technique": 90,
-    "overall": 78
-  },
-  {
-    "name": "Elijah Garcia",
-    "position": "winger",
-    "attack": 75,
-    "defence": 55,
-    "physical": 81,
-    "technique": 82,
-    "overall": 74
-  },
-  {
-    "name": "Matthew Scott",
-    "position": "winger",
-    "attack": 79,
-    "defence": 64,
-    "physical": 79,
-    "technique": 86,
-    "overall": 77
-  },
-  {
+    "id": 25,
     "name": "Andrew Garcia",
     "position": "winger",
     "attack": 90,
@@ -756,87 +250,7 @@
     "overall": 81
   },
   {
-    "name": "Jacob Nelson",
-    "position": "winger",
-    "attack": 76,
-    "defence": 63,
-    "physical": 80,
-    "technique": 83,
-    "overall": 76
-  },
-  {
-    "name": "Christopher Jackson",
-    "position": "forward",
-    "attack": 89,
-    "defence": 40,
-    "physical": 80,
-    "technique": 87,
-    "overall": 77
-  },
-  {
-    "name": "Benjamin Lewis",
-    "position": "forward",
-    "attack": 87,
-    "defence": 46,
-    "physical": 79,
-    "technique": 84,
-    "overall": 77
-  },
-  {
-    "name": "David Allen",
-    "position": "forward",
-    "attack": 91,
-    "defence": 40,
-    "physical": 82,
-    "technique": 82,
-    "overall": 77
-  },
-  {
-    "name": "Anthony Taylor",
-    "position": "forward",
-    "attack": 83,
-    "defence": 40,
-    "physical": 85,
-    "technique": 84,
-    "overall": 75
-  },
-  {
-    "name": "Logan Anderson",
-    "position": "forward",
-    "attack": 90,
-    "defence": 57,
-    "physical": 82,
-    "technique": 81,
-    "overall": 80
-  },
-  {
-    "name": "Elijah Thomas",
-    "position": "forward",
-    "attack": 88,
-    "defence": 53,
-    "physical": 78,
-    "technique": 86,
-    "overall": 79
-  },
-  {
-    "name": "Dylan Lee",
-    "position": "forward",
-    "attack": 84,
-    "defence": 49,
-    "physical": 83,
-    "technique": 89,
-    "overall": 78
-  },
-  {
-    "name": "Samuel Martin",
-    "position": "forward",
-    "attack": 82,
-    "defence": 53,
-    "physical": 83,
-    "technique": 85,
-    "overall": 77
-  },
-  {
+    "id": 26,
     "name": "Daniel Hall",
     "position": "forward",
     "attack": 95,
@@ -846,15 +260,7 @@
     "overall": 84
   },
   {
-    "name": "Liam Taylor",
-    "position": "forward",
-    "attack": 93,
-    "defence": 52,
-    "physical": 81,
-    "technique": 80,
-    "overall": 80
-  },
-  {
+    "id": 27,
     "name": "Anthony Young",
     "position": "forward",
     "attack": 89,
@@ -864,15 +270,137 @@
     "overall": 82
   },
   {
-    "name": "Noah Carter",
+    "id": 28,
+    "name": "Liam Taylor",
     "position": "forward",
-    "attack": 86,
-    "defence": 51,
+    "attack": 93,
+    "defence": 52,
+    "physical": 81,
+    "technique": 80,
+    "overall": 80
+  },
+  {
+    "id": 29,
+    "name": "Logan Anderson",
+    "position": "forward",
+    "attack": 90,
+    "defence": 57,
+    "physical": 82,
+    "technique": 81,
+    "overall": 80
+  },
+  {
+    "id": 30,
+    "name": "Elijah Thomas",
+    "position": "forward",
+    "attack": 88,
+    "defence": 53,
     "physical": 78,
+    "technique": 86,
+    "overall": 79
+  },
+  {
+    "id": 31,
+    "name": "Aiden Martin",
+    "position": "right_back",
+    "attack": 47,
+    "defence": 87,
+    "physical": 78,
+    "technique": 72,
+    "overall": 66
+  },
+  {
+    "id": 32,
+    "name": "John Hall",
+    "position": "center_back",
+    "attack": 47,
+    "defence": 85,
+    "physical": 81,
+    "technique": 78,
+    "overall": 68
+  },
+  {
+    "id": 33,
+    "name": "Nathan Smith",
+    "position": "left_back",
+    "attack": 57,
+    "defence": 79,
+    "physical": 78,
+    "technique": 80,
+    "overall": 70
+  },
+  {
+    "id": 34,
+    "name": "Alexander Garcia",
+    "position": "defensive_midfielder",
+    "attack": 72,
+    "defence": 74,
+    "physical": 85,
+    "technique": 81,
+    "overall": 77
+  },
+  {
+    "id": 35,
+    "name": "Liam Wright",
+    "position": "center_midfielder",
+    "attack": 70,
+    "defence": 70,
+    "physical": 78,
+    "technique": 80,
+    "overall": 74
+  },
+  {
+    "id": 36,
+    "name": "Elijah Carter",
+    "position": "attacking_midfielder",
+    "attack": 84,
+    "defence": 57,
+    "physical": 85,
     "technique": 87,
+    "overall": 79
+  },
+  {
+    "id": 37,
+    "name": "Logan Harris",
+    "position": "right_midfielder",
+    "attack": 85,
+    "defence": 52,
+    "physical": 83,
+    "technique": 90,
+    "overall": 79
+  },
+  {
+    "id": 38,
+    "name": "Andrew Rodriguez",
+    "position": "left_midfielder",
+    "attack": 86,
+    "defence": 46,
+    "physical": 86,
+    "technique": 88,
     "overall": 78
   },
   {
+    "id": 39,
+    "name": "Christopher Thomas",
+    "position": "winger",
+    "attack": 81,
+    "defence": 63,
+    "physical": 77,
+    "technique": 90,
+    "overall": 78
+  },
+  {
+    "id": 40,
+    "name": "Anthony Smith",
+    "position": "forward",
+    "attack": 91,
+    "defence": 48,
+    "physical": 80,
+    "technique": 83,
+    "overall": 79
+  },
+  {
+    "id": 41,
     "name": "Jacob Carter",
     "position": "forward",
     "attack": 87,
@@ -882,21 +410,33 @@
     "overall": 79
   },
   {
-    "name": "Owen Rodriguez",
-    "position": "forward",
-    "attack": 87,
-    "defence": 49,
-    "physical": 79,
-    "technique": 87,
+    "id": 42,
+    "name": "Samuel Brown",
+    "position": "attacking_midfielder",
+    "attack": 78,
+    "defence": 63,
+    "physical": 82,
+    "technique": 89,
     "overall": 78
   },
   {
-    "name": "Anthony Smith",
-    "position": "forward",
-    "attack": 91,
+    "id": 43,
+    "name": "Ethan Nelson",
+    "position": "right_midfielder",
+    "attack": 93,
     "defence": 48,
-    "physical": 80,
-    "technique": 83,
+    "physical": 78,
+    "technique": 82,
     "overall": 79
+  },
+  {
+    "id": 44,
+    "name": "Benjamin Green",
+    "position": "left_midfielder",
+    "attack": 89,
+    "defence": 45,
+    "physical": 78,
+    "technique": 88,
+    "overall": 78
   }
 ]
