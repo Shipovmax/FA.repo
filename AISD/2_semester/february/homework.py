@@ -22,7 +22,10 @@ class Car:
 car1 = Car("BMW", "Black", 250)
 car2 = Car("Audi", "White", 230)
 
+print()
 print("Задание 1")
+print()
+
 print(car1.brand, car1.color, car1.max_speed)
 print(car2.brand, car2.color, car2.max_speed)
 print()
@@ -47,7 +50,10 @@ car1.owners = 2
 car2.weight = 1650
 car2.owners = 1
 
+print()
 print("Задание 2")
+print()
+
 print("Вес:", car1.weight, "Владельцы:", car1.owners)
 print("Вес:", car2.weight, "Владельцы:", car2.owners)
 print()
@@ -97,7 +103,10 @@ class CarAdvanced:
 car3 = CarAdvanced("BMW", "Black", 250, 1800, 2)
 car4 = CarAdvanced("Audi", "White", 230, 1600, 1)
 
+print()
 print("Задание 3")
+print()
+
 car3.info()
 car4.info()
 print(car3.compare(car4))
@@ -141,7 +150,10 @@ class Student:
 
 student = Student("Maxim", 19, 2, 4.5)
 
+print()
 print("Задание 4")
+print()
+
 student.info()
 student.show_grade()
 print()
@@ -174,7 +186,9 @@ class StudentAdvanced(Student):
 
 student2 = StudentAdvanced("Maxim", 19, 2, 4.5)
 
+print()
 print("Задание 5")
+print()
 
 student2.change_name("Alex")
 student2.change_age(20)
@@ -221,9 +235,17 @@ class Calculator:
 
 calc = Calculator()
 
-example = "4 - 7 + 4"
+example1 = "12 - 19 + 1"
+example2 = "1 - 3 + 10"
 
+print()
 print("Задание 6")
-print("Пример:", example)
-print("Результат:", calc.calculate(example))
+print()
+
+print("Пример:", example1)
+print("Результат:", calc.calculate(example1))
+print()
+
+print("Пример:", example2)
+print("Результат:", calc.calculate(example2))
 print()
