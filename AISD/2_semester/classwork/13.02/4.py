@@ -5,11 +5,8 @@
 
 class Clock:
     def __init__(self, minutes: int):
-        # инкапсуляция (скрытое поле)
         self.__minutes = minutes
 
-    # абстракция — пользователь просто вызывает метод,
-    # не зная как происходит вычисление
     def to_hours(self):
         return self.__minutes / 60
 
@@ -17,7 +14,7 @@ class Clock:
         return self.__minutes * 60
 
 
-# --- использование программы ---
+# Тесты
 
 minutes = int(input("Введите количество минут: "))
 clock = Clock(minutes)

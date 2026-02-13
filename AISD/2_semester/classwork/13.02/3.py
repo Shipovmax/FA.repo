@@ -33,6 +33,7 @@ class Teacher:
 
 
 # Тесты
+print(" ")
 
 teacher = Teacher("Иван Петров")
 
@@ -45,3 +46,4 @@ teacher.teach(s2)
 teacher.teach(s3)
 
 teacher.show_students()
+print(" ")
