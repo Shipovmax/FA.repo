@@ -30,7 +30,6 @@ print(car1.brand, car1.color, car1.max_speed)
 print(car2.brand, car2.color, car2.max_speed)
 print()
 
-
 # ==================================================
 # ЗАДАНИЕ 2
 # ==================================================
