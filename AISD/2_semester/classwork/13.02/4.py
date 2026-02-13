@@ -13,7 +13,6 @@ class Clock:
     def to_seconds(self):
         return self.__minutes * 60
 
-
 # Тесты
 
 minutes = int(input("Введите количество минут: "))
