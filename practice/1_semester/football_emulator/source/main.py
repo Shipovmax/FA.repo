@@ -66,7 +66,7 @@ class AdvancedFootballEmulator:
                 else:
                     self.current_state = "main_menu"
             except KeyboardInterrupt:
-                print(f"\n\n🔚 Выход из программы...")
+                print("\n\n🔚 Выход из программы...")
                 break
             except Exception as e:
                 print(f"\n❌ Произошла ошибка: {e}")
@@ -422,7 +422,7 @@ def main():
         emulator = AdvancedFootballEmulator()
         emulator.run()
     except KeyboardInterrupt:
-        print(f"\n\n🔚 Программа прервана пользователем")
+        print("\n\n🔚 Программа прервана пользователем")
     except Exception as e:
         print(f"\n💥 Критическая ошибка: {e}")
 

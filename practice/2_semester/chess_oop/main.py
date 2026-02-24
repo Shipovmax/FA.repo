@@ -3,9 +3,9 @@
 Реализованы дополнительные задания: 1, 5, 6, 7, 8 (Суммарная сложность: 5)
 """
 
+import copy
 import os
 import sys
-import copy
 
 # Цвета для текста и фона клеток доски
 GREEN_COLOR = "\033[92m"
@@ -17,16 +17,17 @@ MAGENTA_COLOR = "\033[95m"
 RESET_COLOR = "\033[0m"
 
 # Фоновые цвета для шахматной доски и подсветки (Задания 6 и 7)
-BG_LIGHT = "\033[47m"   # Светлая клетка
-BG_DARK = "\033[100m"   # Темная клетка
-BG_GREEN = "\033[42m"   # Подсветка доступного хода
-BG_RED = "\033[41m"     # Подсветка угрозы (фигура под боем)
-BG_MAGENTA = "\033[45m" # Выбранная фигура
+BG_LIGHT = "\033[47m"  # Светлая клетка
+BG_DARK = "\033[100m"  # Темная клетка
+BG_GREEN = "\033[42m"  # Подсветка доступного хода
+BG_RED = "\033[41m"  # Подсветка угрозы (фигура под боем)
+BG_MAGENTA = "\033[45m"  # Выбранная фигура
 
 
 # ==========================================
 # ЯДРО (ДВИЖОК ШАХМАТ)
 # ==========================================
+
 
 class Piece:
     """Класс, представляющий шахматную фигуру (в т.ч. новые из Задания 1)"""
@@ -42,14 +43,26 @@ class Piece:
         # Добавлены новые фигуры: champion (★), wizard (✧), jumper (⚶)
         symbols = {
             "white": {
-                "king": "♔", "queen": "♕", "rook": "♖", "bishop": "♗",
-                "knight": "♘", "pawn": "♙",
-                "champion": "★", "wizard": "✧", "jumper": "⚶"
+                "king": "♔",
+                "queen": "♕",
+                "rook": "♖",
+                "bishop": "♗",
+                "knight": "♘",
+                "pawn": "♙",
+                "champion": "★",
+                "wizard": "✧",
+                "jumper": "⚶",
             },
             "black": {
-                "king": "♚", "queen": "♛", "rook": "♜", "bishop": "♝",
-                "knight": "♞", "pawn": "♟",
-                "champion": "★", "wizard": "✧", "jumper": "⚶"
+                "king": "♚",
+                "queen": "♛",
+                "rook": "♜",
+                "bishop": "♝",
+                "knight": "♞",
+                "pawn": "♟",
+                "champion": "★",
+                "wizard": "✧",
+                "jumper": "⚶",
             },
         }
 
@@ -83,9 +96,27 @@ class ChessEngine:
 
         if mode == "fairy":
             # Заменяем ферзя, слонов и коней на новые фигуры
-            placement = ["rook", "jumper", "wizard", "champion", "king", "wizard", "jumper", "rook"]
+            placement = [
+                "rook",
+                "jumper",
+                "wizard",
+                "champion",
+                "king",
+                "wizard",
+                "jumper",
+                "rook",
+            ]
         else:
-            placement = ["rook", "knight", "bishop", "queen", "king", "bishop", "knight", "rook"]
+            placement = [
+                "rook",
+                "knight",
+                "bishop",
+                "queen",
+                "king",
+                "bishop",
+                "knight",
+                "rook",
+            ]
 
         for c, type_ in enumerate(placement):
             board[0][c] = Piece("black", type_)
@@ -103,15 +134,60 @@ class ChessEngine:
         directions = {
             "rook": [(-1, 0), (1, 0), (0, -1), (0, 1)],
             "bishop": [(-1, -1), (-1, 1), (1, -1), (1, 1)],
-            "knight": [(-2, -1), (-2, 1), (-1, -2), (-1, 2), (1, -2), (1, 2), (2, -1), (2, 1)],
-            "king": [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)],
+            "knight": [
+                (-2, -1),
+                (-2, 1),
+                (-1, -2),
+                (-1, 2),
+                (1, -2),
+                (1, 2),
+                (2, -1),
+                (2, 1),
+            ],
+            "king": [
+                (-1, -1),
+                (-1, 0),
+                (-1, 1),
+                (0, -1),
+                (0, 1),
+                (1, -1),
+                (1, 0),
+                (1, 1),
+            ],
             # Задание 1: Правила новых фигур
             # Чемпион: ходит на 1 или 2 клетки по прямой (может перепрыгивать)
-            "champion": [(-2, 0), (2, 0), (0, -2), (0, 2), (-1, 0), (1, 0), (0, -1), (0, 1)],
+            "champion": [
+                (-2, 0),
+                (2, 0),
+                (0, -2),
+                (0, 2),
+                (-1, 0),
+                (1, 0),
+                (0, -1),
+                (0, 1),
+            ],
             # Колдун: ходит на 1 или 3 клетки по диагонали (может перепрыгивать)
-            "wizard": [(-3, -3), (-3, 3), (3, -3), (3, 3), (-1, -1), (-1, 1), (1, -1), (1, 1)],
+            "wizard": [
+                (-3, -3),
+                (-3, 3),
+                (3, -3),
+                (3, 3),
+                (-1, -1),
+                (-1, 1),
+                (1, -1),
+                (1, 1),
+            ],
             # Прыгун: ходит ровно на 2 клетки в любом направлении
-            "jumper": [(-2, -2), (-2, 2), (2, -2), (2, 2), (-2, 0), (2, 0), (0, -2), (0, 2)]
+            "jumper": [
+                (-2, -2),
+                (-2, 2),
+                (2, -2),
+                (2, 2),
+                (-2, 0),
+                (2, 0),
+                (0, -2),
+                (0, 2),
+            ],
         }
         directions["queen"] = directions["rook"] + directions["bishop"]
 
@@ -154,8 +230,10 @@ class ChessEngine:
                         elif target.color != piece.color:
                             moves.append((nr, nc))
                             break
-                        else: break
-                    else: break
+                        else:
+                            break
+                    else:
+                        break
         return moves
 
     def is_check(self, color, board):
@@ -166,19 +244,22 @@ class ChessEngine:
                 if p and p.type == "king" and p.color == color:
                     king_pos = (r, c)
                     break
-        if not king_pos: return False
+        if not king_pos:
+            return False
         opponent = "black" if color == "white" else "white"
         for r in range(8):
             for c in range(8):
                 p = board[r][c]
                 if p and p.color == opponent:
                     moves = self.get_valid_moves_for_piece(r, c, board)
-                    if king_pos in moves: return True
+                    if king_pos in moves:
+                        return True
         return False
 
     def get_legal_moves(self, r, c):
         piece = self.board[r][c]
-        if not piece or piece.color != self.turn: return []
+        if not piece or piece.color != self.turn:
+            return []
         pseudo_moves = self.get_valid_moves_for_piece(r, c, self.board)
         legal_moves = []
         for move in pseudo_moves:
@@ -207,7 +288,8 @@ class ChessEngine:
         return moves
 
     def is_checkmate(self):
-        if not self.is_check(self.turn, self.board): return False
+        if not self.is_check(self.turn, self.board):
+            return False
         for r in range(8):
             for c in range(8):
                 piece = self.board[r][c]
@@ -221,16 +303,18 @@ class ChessEngine:
         r2, c2 = end
         piece = self.board[r1][c1]
 
-        if not piece or piece.color != self.turn: return False
+        if not piece or piece.color != self.turn:
+            return False
         legal_moves = self.get_legal_moves(r1, c1)
-        if (r2, c2) not in legal_moves: return False
+        if (r2, c2) not in legal_moves:
+            return False
 
         state_snapshot = {
             "board": copy.deepcopy(self.board),
             "turn": self.turn,
             "move_count": self.move_count,
             "game_over": self.game_over,
-            "en_passant_target": self.en_passant_target
+            "en_passant_target": self.en_passant_target,
         }
         self.move_log.append(state_snapshot)
 
@@ -260,7 +344,8 @@ class ChessEngine:
         return True
 
     def undo_move(self):
-        if not self.move_log: return False
+        if not self.move_log:
+            return False
         state = self.move_log.pop()
         self.board = state["board"]
         self.turn = state["turn"]
@@ -275,20 +360,24 @@ def parse_square(sq_str):
     try:
         c = ord(sq_str[0].lower()) - ord("a")
         r = 8 - int(sq_str[1])
-        if 0 <= r < 8 and 0 <= c < 8: return (r, c)
-    except: pass
+        if 0 <= r < 8 and 0 <= c < 8:
+            return (r, c)
+    except:
+        pass
     return None
+
 
 # ==========================================
 # UI И НАВИГАЦИЯ (State Machine)
 # ==========================================
+
 
 class AdvancedChessEmulator:
     def __init__(self):
         self.engine = ChessEngine()
         self.current_state = "main_menu"
         self.selected_square = None  # Для подсветки доступных ходов (Задание 6)
-        self.show_threats = False    # Для подсветки угроз (Задание 7)
+        self.show_threats = False  # Для подсветки угроз (Задание 7)
 
     def run(self):
         self.print_header()
@@ -308,13 +397,23 @@ class AdvancedChessEmulator:
                 self.current_state = "main_menu"
 
     def print_header(self):
-        print(f"{CYAN_COLOR}=================================================={RESET_COLOR}")
-        print(f"{YELLOW_COLOR}♟️   ПРОДВИНУТЫЙ ЭМУЛЯТОР ШАХМАТ (MAX COMPLEXITY)  ♙{RESET_COLOR}")
-        print(f"{CYAN_COLOR}=================================================={RESET_COLOR}")
+        print(
+            f"{CYAN_COLOR}=================================================={RESET_COLOR}"
+        )
+        print(
+            f"{YELLOW_COLOR}♟️   ПРОДВИНУТЫЙ ЭМУЛЯТОР ШАХМАТ (MAX COMPLEXITY)  ♙{RESET_COLOR}"
+        )
+        print(
+            f"{CYAN_COLOR}=================================================={RESET_COLOR}"
+        )
 
     def show_main_menu(self):
         print(f"\n{CYAN_COLOR}=== ГЛАВНОЕ МЕНЮ ==={RESET_COLOR}")
-        status = "Продолжить" if self.engine.move_count > 0 and not self.engine.game_over else "Начать"
+        status = (
+            "Продолжить"
+            if self.engine.move_count > 0 and not self.engine.game_over
+            else "Начать"
+        )
 
         print(f"1 - 🎮 {status} классическую партию")
         print("2 - 🌟 Начать СКАЗОЧНЫЕ ШАХМАТЫ (3 новые фигуры)")
@@ -354,14 +453,22 @@ class AdvancedChessEmulator:
                 piece = self.engine.board[r][c]
 
                 # Логика цветов фона
-                is_selected = (self.selected_square == (r, c))
+                is_selected = self.selected_square == (r, c)
                 is_legal_dest = (r, c) in legal_destinations
-                is_threatened = (r, c) in threatened_squares and piece and piece.color == self.engine.turn
+                is_threatened = (
+                    (r, c) in threatened_squares
+                    and piece
+                    and piece.color == self.engine.turn
+                )
 
-                if is_selected: bg = BG_MAGENTA
-                elif is_legal_dest: bg = BG_GREEN
-                elif is_threatened: bg = BG_RED
-                else: bg = BG_LIGHT if (r + c) % 2 == 0 else BG_DARK
+                if is_selected:
+                    bg = BG_MAGENTA
+                elif is_legal_dest:
+                    bg = BG_GREEN
+                elif is_threatened:
+                    bg = BG_RED
+                else:
+                    bg = BG_LIGHT if (r + c) % 2 == 0 else BG_DARK
 
                 sym = piece.symbol() if piece else " "
                 row_s += f"{bg} {sym} {RESET_COLOR}"
@@ -373,16 +480,24 @@ class AdvancedChessEmulator:
 
     def play_match(self):
         if self.engine.game_over:
-            print(f"\n{YELLOW_COLOR}🏆 МАТ! Победили {self.engine.winner.upper()}!{RESET_COLOR}")
+            print(
+                f"\n{YELLOW_COLOR}🏆 МАТ! Победили {self.engine.winner.upper()}!{RESET_COLOR}"
+            )
             input(f"{CYAN_COLOR}Нажмите Enter для выхода в меню...{RESET_COLOR}")
             self.current_state = "main_menu"
             return
 
         self.print_board_styled()
 
-        turn_str = f"{YELLOW_COLOR}БЕЛЫЕ{RESET_COLOR}" if self.engine.turn == "white" else f"{BLUE_COLOR}ЧЕРНЫЕ{RESET_COLOR}"
+        turn_str = (
+            f"{YELLOW_COLOR}БЕЛЫЕ{RESET_COLOR}"
+            if self.engine.turn == "white"
+            else f"{BLUE_COLOR}ЧЕРНЫЕ{RESET_COLOR}"
+        )
         print(f"Ход: {turn_str} | Всего ходов: {self.engine.move_count}")
-        print(f"{CYAN_COLOR}Команды: {RESET_COLOR}'e2' (выбрать), 'e2e4' (ход), 'undo', 'threats' (угрозы), '0' (в меню)")
+        print(
+            f"{CYAN_COLOR}Команды: {RESET_COLOR}'e2' (выбрать), 'e2e4' (ход), 'undo', 'threats' (угрозы), '0' (в меню)"
+        )
 
         cmd = input(f"{YELLOW_COLOR}Ваш выбор: {RESET_COLOR}").strip().lower()
 
@@ -408,7 +523,9 @@ class AdvancedChessEmulator:
                     self.selected_square = sq
                 else:
                     self.selected_square = None
-                    print(f"{RED_COLOR}❌ Это не ваша фигура или клетка пуста!{RESET_COLOR}")
+                    print(
+                        f"{RED_COLOR}❌ Это не ваша фигура или клетка пуста!{RESET_COLOR}"
+                    )
             return
 
         # Совершение хода: 'e2e4' или если фигура уже выбрана 'e4'
@@ -424,9 +541,11 @@ class AdvancedChessEmulator:
             promote_to = "queen"
             if piece and piece.type == "pawn" and (end[0] == 0 or end[0] == 7):
                 if end in self.engine.get_legal_moves(*start):
-                    print(f"{MAGENTA_COLOR}🌟 Пешка достигла края! В кого превратить? (queen, rook, bishop, knight){RESET_COLOR}")
+                    print(
+                        f"{MAGENTA_COLOR}🌟 Пешка достигла края! В кого превратить? (queen, rook, bishop, knight){RESET_COLOR}"
+                    )
                     choice = input("Выбор: ").strip().lower()
-                    if choice in ['queen', 'rook', 'bishop', 'knight']:
+                    if choice in ["queen", "rook", "bishop", "knight"]:
                         promote_to = choice
 
             if self.engine.make_move(start, end, promote_to):
@@ -434,10 +553,12 @@ class AdvancedChessEmulator:
             else:
                 print(f"\n{RED_COLOR}❌ Недопустимый ход!{RESET_COLOR}")
         else:
-            print(f"\n{RED_COLOR}❌ Неправильный формат! Введите откуда и куда (например: e2e4) или кликните e2{RESET_COLOR}")
+            print(
+                f"\n{RED_COLOR}❌ Неправильный формат! Введите откуда и куда (например: e2e4) или кликните e2{RESET_COLOR}"
+            )
 
 
 if __name__ == "__main__":
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system("cls" if os.name == "nt" else "clear")
     app = AdvancedChessEmulator()
     app.run()
