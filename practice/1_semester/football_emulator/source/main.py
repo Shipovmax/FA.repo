@@ -24,7 +24,7 @@ from templates.players import (
 )
 from templates.teams import print_team_card, print_teams_table
 
-# Определяем цвета для использования в main.py
+# Определяем цвета для использования в test_skip.py
 GREEN_COLOR = "\033[92m"
 BLUE_COLOR = "\033[94m"
 YELLOW_COLOR = "\033[93m"
